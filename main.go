@@ -65,10 +65,15 @@ func main() {
 			totalProcesses++
 			break
 		case "2":
-			//pv <- true
 			printValues = true
 			fmt.Scanln()
 			printValues = false
+			break
+		case "3":
+			fmt.Print("ID: ")
+			fmt.Scanln(&terminateProcess)
+		default:
+			break
 		}
 	}
 }
